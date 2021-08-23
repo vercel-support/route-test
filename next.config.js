@@ -14,9 +14,7 @@ const botExp = new RegExp(
 module.exports = {
   async rewrites() {
     const cookies = Object.keys(experiments).map((path) => {
-      const key = Buffer.from(`${path}^${experiments[path]}`)
-        .toString('base64')
-        .replace(/=/g, '');
+      const key = "L3Rlc3RebmV4dC10ZXN0";
 
       return {
         source: path,
